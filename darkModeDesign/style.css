@@ -23,6 +23,7 @@ nav{
     margin-left: 10px;
 }
 .list{
+    cursor: pointer;
     font-weight: 600;
     padding : 5px;
     margin-right: 20px;
@@ -86,9 +87,14 @@ input:checked[type="checkbox"]::before{
     padding-bottom: 1rem;
 }
 .home>.text>.button{
+    cursor: pointer;
     padding : 7px;
     border : 2px solid #50bcdf;
     border-radius: 10px;
+    transition: .5s;
+}
+.home>.text>.button:hover{
+    background-color: #50bcdf;
 }
 .home>.img{
     width: 45%;
