@@ -3,9 +3,12 @@ html, body{
     margin : 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
 }
-/*  */
+.container{
+    width: 100%;
+    height: 100%;
+    background-color : #fff;
+}
 /* header Design */
 header{
     width: 100%;
@@ -92,4 +95,18 @@ input:checked[type="checkbox"]::before{
     height: 50%;
     background-image: url("./img1.png");
     background-size: cover;
+}
+
+/* darkmode Design */
+.container.darkmode{
+    background-color: black;
+}
+.container.darkmode header,
+.container.darkmode p,
+.container.darkmode .button{
+    color:#fff;
+}
+.container.darkmode>header>div>span, 
+.container.darkmode>.home>.text>h1{
+    color : #50bcdf;
 }
