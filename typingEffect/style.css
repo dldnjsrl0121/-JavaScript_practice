@@ -24,6 +24,19 @@ h2{
 }
 /* 커서 디자인 */
 .txt-type>.txt{
-    border-right: 0.2rem solid #fff;
+    animation-duration: 0.5s;
+    animation-name: cusor;
+    animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes cusor{
+    0%{
+        border-right: 0.2rem solid rgba(255,255,255, 0);
+    }
+    50%{
+        border-right: 0.2rem solid rgba(255,255,255, 1);
+    }
+    100%{
+        border-right: 0.2rem solid rgba(255,255,255, 0);
+    }
+}

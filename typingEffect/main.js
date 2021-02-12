@@ -45,4 +45,3 @@ const type = function(){
 }
 
 document.addEventListener('DOMContentLoaded', type);
-
