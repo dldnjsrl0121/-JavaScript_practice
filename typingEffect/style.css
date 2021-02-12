@@ -1,0 +1,29 @@
+body{
+    height: 100vh;
+    background: url('./background.jpg'); no-repeat;
+    color : #fff;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+h1, h2{
+    margin : 0.4rem;
+}
+h1{
+    font-size : 3rem;
+}
+h2{
+    font-size : 2rem;
+}
+/* 커서 디자인 */
+.txt-type>.txt{
+    border-right: 0.2rem solid #fff;
+}
+
