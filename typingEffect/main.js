@@ -8,7 +8,9 @@ let isDeleting = false;
 const type = function(){
     const current = index % words.length;
     const fullTxt = words[current];
-
+    //기본 스피드 설정 - 글씨 작성 시
+    let speed = 200;
+    
     //단어를 쓰는 중인지 지우는 확인
     if(!isDeleting){
         //단어를 쓰는 중이라면
@@ -18,17 +20,13 @@ const type = function(){
         //단어를 지우는 중
         txt = fullTxt.substring(0,txt.length - 1);
         //1글자 적게 추출 
+        //지우는 중에는 속도 더 빠르게
+        speed /=2;
     }
 
     //새로 추출한 단어로 엘리먼트 변경
     txtElement.innerHTML = `<span class="txt">${txt}</span>`;
 
-    //기본 타이핑 속도 설정
-    let speed = 200;
-    if(isDeleting){
-        //지우는 중에는 속도 더 빠르게
-        speed /=2;
-    }
 
     if(!isDeleting&&txt==fullTxt){
         //현재 단어를 모두 완성했다면
