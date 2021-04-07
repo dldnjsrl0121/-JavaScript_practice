@@ -33,7 +33,7 @@ body, html{
 /* modal style */
 .modal{
   /* 모달 뒷배경 */
-  /* display: none;  */
+  display: none; 
   position: fixed; 
   z-index: 10; 
   left: 0;
